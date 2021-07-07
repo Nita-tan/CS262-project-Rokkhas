@@ -1,12 +1,12 @@
 @extends('frontend.master')
 @section('titlepage')
-<title>ប្រភេទដំណាំ | ដាំអ្វី</title>
+<title>catagories</title>
 @section('title', 'Products List')
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">
-    <img src="img/2.jpg" alt="">
+    <img src="img/plant1.jpg" alt="">
     <div class="text-center header-text">
-        <p>ប្រភេទដំណាំ</p>
+       
     </div>
 </div>
 <section id="product">
@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-md-2">
           <div class="container">
-            <p style="font-size: 36px;">ដំណាំ</p>
+            <p style="font-size: 36px;">Type of plant</p>
           <ul>
               @foreach ($allproductstype as $productstype)
                   <li><a href="{{ route('productscategory',$productstype->id) }}">{{$productstype->name}}</a></li>

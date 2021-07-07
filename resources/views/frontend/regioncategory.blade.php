@@ -1,12 +1,12 @@
 @extends('frontend.master')
 @section('titlepage')
-<title>ដំណាំតាមតំបន់ | ដាំអ្វី</title>
+<title>Region</title>
 @section('title', 'Products by Region')
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">
     <img src="img/3.jpg" alt="">
     <div class="text-center">
-        <p>ដំណាំតាមតំបន់</p>
+        <p>Region</p>
     </div>
 </div>
 <section id="product">
@@ -30,7 +30,7 @@
                   @endforeach
                 </div>
                 <div class="back">
-                  <a href="{{ route('productsbyregion') }}">◀ ត្រឡប់ទៅកាន់ដំណាំតាមតំបន់</a>
+                  <a href="{{ route('productsbyregion') }}">◀ Back</a>
                 </div>
               </div>
 

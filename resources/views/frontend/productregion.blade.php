@@ -1,12 +1,12 @@
 @extends('frontend.master')
 @section('titlepage')
-<title>ដំណាំតាមតំបន់ | ដាំអ្វី</title>
+<title>Region</title>
 @section('title', 'Products by Region')
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">
-    <img src="img/3.jpg" alt="">
+    <img src="img/plant1.jpg" alt="">
     <div class="text-center header-text">
-        <p>ដំណាំតាមតំបន់</p>
+        <p>Plant base on region</p>
     </div>
 </div>
 <section id="product">
@@ -14,7 +14,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="container catergory">
-                <p style="font-size: 36px;">តំបន់</p>
+                <p style="font-size: 36px;">Region</p>
             <ul>
               @foreach ($allproductsRegion as $productsRegion)
               <li><a href="{{ route('regionscategory',$productsRegion->id) }}">{{$productsRegion->name}}</a></li>

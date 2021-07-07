@@ -8,26 +8,26 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/bg-home.jpg" class="w-100" alt="...">
-        <div class="carousel-caption">
-          <h1>ដាំដំណាំគ្រប់មុខ គ្រប់គ្នា គ្រប់ទីកន្លែង</h1>
+        <img src="img/plant1.jpg" class="w-100" alt="...">
+        <!-- <div class="carousel-caption">
+          
           <br>
-          <a href="{{ route('products') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> ស្វែងរកប្រភេទដំណាំ</a>
-        </div>
+          <a href="{{ route('products') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+        </div> -->
       </div>
       <div class="carousel-item">
-        <img src="img/2.jpg" class="w-100" alt="...">
-        <div class="carousel-caption">
-          <h1>ប្រភេទដំណាំទាំងអស់នៅក្នុងដៃអ្នក</h1>
-          <a href="{{ route('products') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> ទៅកាន់ដំណាំតាមប្រភេទ</a>
-        </div>
+        <img src="img/plant2.jpg" class="w-100"  alt="...">
+        <!-- <div class="carousel-caption">
+     
+          <a href="{{ route('products') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+        </div> -->
       </div>
       <div class="carousel-item">
-        <img src="img/3.jpg" class="w-100" alt="...">
-        <div class="carousel-caption">
-          <h1>ស្វែងរកដំណាំតាមតំបន់ដែលអ្នកត្រូវការ</h1>
-          <a href="{{ route('productsbyregion') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> ស្វែងរកដំណាំតាមតំបន់</a>
-        </div>
+        <img src="img/plant1.jpg" class="w-100" alt="...">
+        <!-- <div class="carousel-caption">
+  
+          <a href="{{ route('productsbyregion') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+        </div> -->
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

@@ -1,6 +1,6 @@
 @extends('frontend.master')
 @section('titlepage')
-<title>{{$products->name}} | ដាំអ្វី</title>
+<title>{{$products->name}} Rokkhas</title>
 @section('title', 'Products Detail')
 <link rel="stylesheet" href="{{asset('css/product-detail.css')}}">
 
@@ -23,7 +23,7 @@
                 <p>{!!$products->description!!}</p>
             </div>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
             <div class="product-side">
                 <b>ឧបករណ៍ដាំដុះដែលអ្នកត្រូវការ:</b>
                 <div class="row equipment">
@@ -60,10 +60,16 @@
                               <a href="#" class="btn btn-info">ទិញឥឡូវនេះ</a>
                             </div>
                           </div>
-                    </div>
-                </div>
-            </div>
+                    </div> -->
+                <!-- </div>
+            </div> -->
+            <br/>
+            
         </div>
+        <div class="mx-auto" style="width: 200px;">
+        <a href="#" class="btn btn-info">Buy Now</a>
+      </div>  
+        
     </div>
 </div>
 </section>

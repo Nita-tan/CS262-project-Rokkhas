@@ -23,7 +23,7 @@
             <!-- Navbar -->
             <div class="container">
               <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                <a class="navbar-brand" href="{{ route('home') }}"><img src="img/damaveywhite.png" alt=""></a>
+                <a class="navbar-brand" href="{{ route('home') }}"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,16 +31,16 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">ទំព័រដើម</a>
+                            <a class="nav-link" href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('products') }}">ប្រភេទដំណាំ</a>
+                            <a class="nav-link" href="{{ route('products') }}">catagories</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="{{ route('productsbyregion') }}">ដំណាំតាមតំបន់</a>
+                            <a class="nav-link" href="{{ route('productsbyregion') }}">Region</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="{{ route('aboutus') }}">អំពីពួកយើង</a>
+                            <a class="nav-link" href="{{ route('aboutus') }}">About us</a>
                         </li>
                     </ul>
                 </div>
@@ -60,22 +60,22 @@
               <div class="container">
                   <div class="row">
                       <div class="col-sm-6 col-md-3 item">
-                          <img src="img/damaveywhite.png" alt="">
+                          <!-- <img src="img/damaveywhite.png" alt=""> -->
                       </div>
                       <div class="col-sm-6 col-md-3 item">
-                          <h3>ទំនាក់ទំនងពួកយើង</h3>
+                          <h3>Contact Us</h3>
                           <ul>
-                              <li><a href="mailto:info@damavey.com">info@damavey.com</a></li>
+                              <li><a href="mailto:info@damavey.com">info@rokkhas.com</a></li>
                               <li><a>012 345 678</a></li>
                           </ul>
                       </div>
                       <div class="col-md-6 item text">
-                          <h3>ដាំអ្វី | DamAvey</h3>
-                          <p>ដាំអ្វីគឺជាកន្លែងមួយដែលប្រមូលផ្តុំទៅដោយឯកសារប្រភេទដំណាំនានានិងជាកន្លែងមួយដែលបង្ហាញពីការដាំដំណាំទាំងនោះដោយច្បាស់លាស់។ ដាំអ្វីបង្កើតឡើងក្នុងគោលបំណងចង់ចែករំលែកចំណេះដឹងដាំដុះកសិផលទៅកាន់ប្រជាជនកម្ពុជាទាំងអស់អោយយល់ដឹងពីប្រភេទដំណាំនានារបស់កម្ពុជាយើង</p>
+                          <h3>Rokkhas</h3>
+                          
                       </div>
                       <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                   </div>
-                  <p class="copyright">&copy; រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ DamAvey</p>
+                  <p class="copyright">&copy; ​ Rokkhas</p>
               </div>
           </footer>
       </div>
