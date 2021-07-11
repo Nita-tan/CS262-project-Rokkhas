@@ -6,7 +6,7 @@
 @stop
 
 @section('content')
-    <h1>Products by region posts</h1>
+    <h1>Recommend products</h1>
     @if(Session::has('updated'))
             <div class="alert alert-info">
               {{Session::get('updated')}}
@@ -26,22 +26,22 @@
             <th>Created at</th>
             <th>Action</th>
         </tr>
-        @foreach ($allproductsregion as $productsregion)
+        @foreach ($allproductsrecommend as $productsrecommend)
         <tr>
-            <td>{{$productsregion->id}}</td>
-            <td>{{$productsregion->name}}</td>
-            <td>{!!Str::limit($productsregion->description, 300, ' (...)')!!}</td>
-            <td width="100px">{{$productsregion->created_at}}</td>
+            <td>{{$productsrecommend->id}}</td>
+            <td>{{$productsrecommend->name}}</td>
+            <td>{!!Str::limit($productsrecommend->description, 300, ' (...)')!!}</td>
+            <td width="100px">{{$productsrecommend->created_at}}</td>
             <td width="300px">
-                <a href="{{ route('productsregion.detail',$productsregion->id) }}" class="btn btn-info ">Detail</a>
-                <a href="{{ route('productsregion.edit',$productsregion->id) }}" class="btn btn-warning">Edit</a>
-                <a href="{{ route('productsregion.delete',$productsregion->id) }}" class="btn btn-danger ">Delete</a>
+                <a href="{{ route('productsrecommend.detail',$productsrecommend->id) }}" class="btn btn-info ">Detail</a>
+                <a href="{{ route('productsrecommend.edit',$productsrecommend->id) }}" class="btn btn-warning">Edit</a>
+                <a href="{{ route('productsrecommend.delete',$productsrecommend->id) }}" class="btn btn-danger ">Delete</a>
             </td>
         </tr>
     @endforeach
     </table>
     <div class="d-flex justify-content-center">
-        {!! $allproductsregion->links() !!}
+        {!! $allproductsrecommend->links() !!}
     </div>
 @stop
 

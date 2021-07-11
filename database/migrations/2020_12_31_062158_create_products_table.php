@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name');
             $table->longText('description')->nullable();
-            $table->string('productsbyregion_id');
+            $table->string('productsrecommend_id');
             $table->string('productstype_id');
             $table->string('img_url');
             $table->timestamps();

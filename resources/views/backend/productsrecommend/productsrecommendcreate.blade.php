@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Create Region')
+@section('title', 'Create Products')
 
 @section('content_header')
 @stop
@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h1>Create Region</h1>
+            <h1>Create Products</h1>
             @if(Session::has('success'))
             <div class="alert alert-success">
               {{Session::get('success')}}
@@ -25,7 +25,7 @@
                             </ul>
                         </div>
                     @endif
-            <form action={{route('productsregion.store')}} method="post" enctype="multipart/form-data">
+            <form action={{route('productsrecommend.store')}} method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label for="title">Title <span class="require"></label>
@@ -59,3 +59,4 @@
 @section('js')
     <script> console.log('Hi!'); </script>
 @stop
+ 

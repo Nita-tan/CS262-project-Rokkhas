@@ -12,5 +12,5 @@ class products extends Model
     protected $table = 'products';
     public $timestamps = true;
 
-    protected $fillable = ['user_id', 'productstype_id' ,'productsbyregion_id', 'name', 'description', 'img_url', 'created_at'];
+    protected $fillable = ['user_id', 'productstype_id' ,'productsrecommend_id', 'name', 'description', 'img_url', 'created_at'];
 }

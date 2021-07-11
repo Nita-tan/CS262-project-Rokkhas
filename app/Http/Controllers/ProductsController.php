@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Models\products;
 use Illuminate\Http\Request;
-use App\Models\ProductsRegion;
+use App\Models\ProductsRecommend;
 use App\Models\Productstype;
 use Auth;
 
@@ -28,11 +28,11 @@ class ProductsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create( Productstype $productstype  ,ProductsRegion $productsregion)
+    public function create( Productstype $productstype  ,ProductsRecommend $productsrecommend)
     {
         $productstype = Productstype::all();
-        $productsregion = ProductsRegion::all();
-        return view('backend.products.productscreate', ['productsregion' => $productsregion], ['productstype' => $productstype] );
+        $productsrecommend = ProductsRecommend::all();
+        return view('backend.products.productscreate', ['ProductsRecommend' => $productsrecommend], ['productstype' => $productstype] );
     }
 
     /**
@@ -46,7 +46,7 @@ class ProductsController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required',
-            'productsbyregion_id' => 'required',
+            'productsrecommend_id' => 'required',
             'productstype_id' => 'required',
             'img_url' => 'required',
         ]);

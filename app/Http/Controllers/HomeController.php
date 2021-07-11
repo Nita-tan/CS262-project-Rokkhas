@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\products;
-use App\Models\ProductsRegion;
+use App\Models\ProductsRecommend;
 use App\Models\Productstype;
 
 class HomeController extends Controller
@@ -28,11 +28,11 @@ class HomeController extends Controller
         return view('frontend.productlist',["allproducts"=>$allproducts],["allproductstype"=>$allproductstype]);
     }
 
-    public function productsbyregion(ProductsRegion $productsRegion, products $products)
+    public function productsrecommend(ProductsRecommend $ProductsRecommend, products $products)
     {
         $allproducts = Products::all();
-        $allproductsRegion = ProductsRegion::all();
-        return view('frontend.productregion',["allproducts"=>$allproducts],["allproductsRegion"=>$allproductsRegion]);
+        $allProductsRecommend = ProductsRecommend::all();
+        return view('frontend.productsrecommend',["allproducts"=>$allproducts],["allProductsRecommend"=>$allProductsRecommend]);
     }
     public function productdetail($id, products $products)
     {
@@ -51,12 +51,12 @@ class HomeController extends Controller
         $allproducts = products::all();
         return view('frontend.productcategory', ['productstype' => $productstype], ["allproducts"=>$allproducts],["allproductstype"=>$allproductstype] );
     }
-    public function regionscategory($id, products $products, ProductsRegion $productsRegion)
+    public function recommendcategory($id, products $products, ProductsRecommend $ProductsRecommend)
     {
-        $productsRegion = ProductsRegion::find($id);
-        $allproductsRegion = ProductsRegion::all();
+        $ProductsRecommend = ProductsRecommend::find($id);
+        $allProductsRecommend = ProductsRecommend::all();
         $allproducts = products::all();
-        return view('frontend.regioncategory', ['productsRegion' => $productsRegion], ["allproducts"=>$allproducts],["allproductsRegion"=>$allproductsRegion] );
+        return view('frontend.recommendcategory', ['ProductsRecommend' => $ProductsRecommend], ["allproducts"=>$allproducts],["allProductsRecommend"=>$allProductsRecommend] );
     }
     public function aboutus()
     {

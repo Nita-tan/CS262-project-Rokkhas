@@ -39,8 +39,8 @@
                 </div>
                 <div class="form-group">
                     <label for="region">Region</label>
-                    <select class="form-control selectpicker" data-live-search="true" id="productsbyregion_id" name="productsbyregion_id" multiple>
-                        @foreach ($productsregion as $region)
+                    <select class="form-control selectpicker" data-live-search="true" id="productsrecommend_id" name="productsrecommend_id" multiple>
+                        @foreach ($ProductsRecommend as $region)
                         <option value="{{$region->id}}">{{$region->name}}</option>
                         @endforeach
                       </select>

@@ -4,29 +4,20 @@
 @section('title', 'Products by Region')
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">
-    <img src="img/plant1.jpg" alt="">
-    <div class="text-center header-text">
-        <p>Plant base on region</p>
+    <img src="img/3.jpg" alt="">
+    <div class="text-center">
+        <p>Region</p>
     </div>
 </div>
 <section id="product">
     <div class="container-fluid product-body">
         <div class="row">
-          <div class="col-md-4">
-            <div class="container catergory">
-                <p style="font-size: 36px;">Region</p>
-            <ul>
-              @foreach ($allproductsRegion as $productsRegion)
-              <li><a href="{{ route('regionscategory',$productsRegion->id) }}">{{$productsRegion->name}}</a></li>
-          @endforeach
-            </ul>
-            </div>
-          </div>
-
-            <div class="col-md-8">
               <div class="container">
+                <h1 style="text-align: center">{{$ProductsRecommend->name}}</h1>
+                <br>
                 <div class="card-deck">
-                  @forelse ($allproducts as $products)
+                  @foreach ($allproducts as $products)
+                  @if ($products->productsrecommend_id == $ProductsRecommend->id)
                   <div class="col mb-4">
                     <div class="card mx-auto">
                       <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
@@ -35,12 +26,13 @@
                       </div>
                     </div>
                   </div>
-                  @empty
-                  <h1>No products yet</h1>
-                  @endforelse
+                  @endif
+                  @endforeach
+                </div>
+                <div class="back">
+                  <a href="{{ route('productsrecommend') }}">◀ Back</a>
                 </div>
               </div>
-            </div>
 
         </div>
       </div>

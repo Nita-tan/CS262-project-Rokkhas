@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddUserIdToProductsregionTable extends Migration
+class AddUserIdToProductsrecommendTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddUserIdToProductsregionTable extends Migration
      */
     public function up()
     {
-        Schema::table('productsregion', function (Blueprint $table) {
+        Schema::table('productsrecommend', function (Blueprint $table) {
             $table->foreignid('user_id')->constrained('users');
         });
     }
@@ -25,8 +25,8 @@ class AddUserIdToProductsregionTable extends Migration
      */
     public function down()
     {
-        Schema::table('productsregion', function (Blueprint $table) {
-            $table->dropForeign('productsregion_user_id_foreign');
+        Schema::table('productsrecommend', function (Blueprint $table) {
+            $table->dropForeign('productsrecommend_user_id_foreign');
             $table->dropColumn('user_id');
         });
     }

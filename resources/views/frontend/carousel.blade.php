@@ -26,7 +26,7 @@
         <img src="img/plant1.jpg" class="w-100" alt="...">
         <!-- <div class="carousel-caption">
   
-          <a href="{{ route('productsbyregion') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+          <a href="{{ route('productsrecommend') }}" <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
         </div> -->
       </div>
     </div>

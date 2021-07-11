@@ -236,18 +236,18 @@ return [
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text'    => 'Products by Region',
+            'text'    => 'Products Recommend',
             'icon'    => 'fas fa-globe-asia',
             'submenu' => [
                 [
-                    'text' => 'Products by Region',
+                    'text' => 'Product Recommend',
                     'icon' => 'fas fa-th-list',
-                    'url'  => '/productsregion/index',
+                    'url'  => '/productsrecommend/index',
                 ],
                 [
-                    'text' => 'Create Region',
+                    'text' => 'Create products',
                     'icon' => 'fas fa-plus-square',
-                    'url'  => '/productsregion/create',
+                    'url'  => '/productsrecommend/create',
                 ],
             ],
         ],

@@ -37,7 +37,7 @@
                             <a class="nav-link" href="{{ route('products') }}">catagories</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="{{ route('productsbyregion') }}">Region</a>
+                            <a class="nav-link" href="{{ route('productsrecommend') }}">Recommend</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="{{ route('aboutus') }}">About us</a>

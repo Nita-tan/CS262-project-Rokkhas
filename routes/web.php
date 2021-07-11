@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
-use App\Http\Controllers\ProductsRegionController;
+use App\Http\Controllers\ProductsRecommendController;
 use App\Http\Controllers\ProductstypeContorller;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\EquipmentProductController;
@@ -25,8 +25,8 @@ Auth::routes();
     Route::get('/',[HomeController::class, 'home'])->name('home');
     Route::get('/products',[HomeController::class, 'products'])->name('products');
     Route::get('/productscategory{id}',[HomeController::class, 'productscategory'])->name('productscategory');
-    Route::get('/regionscategory{id}',[HomeController::class, 'regionscategory'])->name('regionscategory');
-    Route::get('/productsbyregion',[HomeController::class, 'productsbyregion'])->name('productsbyregion');
+    Route::get('/recommendcategory{id}',[HomeController::class, 'recommendcategory'])->name('recommendcategory');
+    Route::get('/productsrecommend',[HomeController::class, 'productsrecommend'])->name('productsrecommend');
     Route::get('/productsdetail-{id}',[HomeController::class, 'productdetail'])->name('productdetail');
     Route::get('/aboutus',[HomeController::class, 'aboutus'])->name('aboutus');
 //
@@ -51,15 +51,15 @@ Route::middleware('auth')->prefix('/products')->group(function(){
 });
 //
 
-//ProductsRegion
-Route::middleware('auth')->prefix('/productsregion')->group(function(){
-    Route::get('/index',[ProductsRegionController::class,'index'])->name('productsregion.index');
-    Route::get('/create',[ProductsRegionController::class,'create'])->name('productsregion.create');
-    Route::post('/store',[ProductsRegionController::class,'store'])->name('productsregion.store');
-    Route::get('/detail/{id}',[ProductsRegionController::class,'detail'])->name('productsregion.detail');
-    Route::get('/edit/{id}',[ProductsRegionController::class,'edit'])->name('productsregion.edit');
-    Route::put('/update/{id}',[ProductsRegionController::class,'update'])->name('productsregion.update');
-    Route::get('/delete/{id}',[ProductsRegionController::class,'delete'])->name('productsregion.delete');
+//ProductsRecommend
+Route::middleware('auth')->prefix('/productsrecommend')->group(function(){
+    Route::get('/index',[ProductsRecommendController::class,'index'])->name('productsrecommend.index');
+    Route::get('/create',[ProductsRecommendController::class,'create'])->name('productsrecommend.create');
+    Route::post('/store',[ProductsRecommendController::class,'store'])->name('productsrecommend.store');
+    Route::get('/detail/{id}',[ProductsRecommendController::class,'detail'])->name('productsrecommend.detail');
+    Route::get('/edit/{id}',[ProductsRecommendController::class,'edit'])->name('productsrecommend.edit');
+    Route::put('/update/{id}',[ProductsRecommendController::class,'update'])->name('productsrecommend.update');
+    Route::get('/delete/{id}',[ProductsRecommendController::class,'delete'])->name('productsrecommend.delete');
 });
 
 //Productstype
