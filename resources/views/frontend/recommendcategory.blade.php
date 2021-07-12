@@ -1,12 +1,12 @@
 @extends('frontend.master')
 @section('titlepage')
-<title>Region</title>
+<title>Product Recommend</title>
 @section('title', 'Products by Region')
 <link rel="stylesheet" href="{{asset('css/product-list.css')}}">
 <div class="background">
     <img src="img/3.jpg" alt="">
     <div class="text-center">
-        <p>Region</p>
+        <p>Product Recommend</p>
     </div>
 </div>
 <section id="product">

@@ -18,7 +18,7 @@
             <div class="row row-cols row-cols-md-2">
               @forelse ($allproducts as $products)
               <div class="col mb-4">
-                <div class="card mx-auto" id="daily-poular">
+                <div class="card " id="daily-poular">
                   <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><a href="{{ route('productdetail',$products->id) }}">{{$products->name}}</a></h5>
