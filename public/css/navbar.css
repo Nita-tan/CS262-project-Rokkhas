@@ -47,7 +47,7 @@ body{
     padding: 0 18px;
 }
 .nav-item a {
-    color: white !important;
+    color: rgb(10, 10, 10) !important;
 }
 /*  */
 /* Selection */

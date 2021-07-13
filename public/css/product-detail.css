@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .navbar-dark{
-    background: transparent !important;
+    background: #282d32;
 }
 .navbar-dark.scrolled{
     background: #282d32 !important;
@@ -59,19 +59,19 @@ body{
     overflow-x: hidden;
     font-family: 'Poppins', cursive;
 }
-.card-deck {
+
+.wrap-dt {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    height: 100vh;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.background img{
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-    box-shadow: 0 0 5px 5px rgba(44, 44, 44, 0.3);
-
+.img-dt {
+    width: 500px;
+    margin-left: 50px;
 }
 
 .text-center {
@@ -94,7 +94,8 @@ body{
 }
 
 .card-title{
-    text-align: center;
+    text-align: start;
+    font-size: 50px;
 }
 
 .equipment{

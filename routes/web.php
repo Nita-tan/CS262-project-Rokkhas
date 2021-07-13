@@ -7,7 +7,7 @@ use App\Http\Controllers\ProductstypeContorller;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\EquipmentProductController;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\ViewcartController;
 Auth::routes();
 /*
 |--------------------------------------------------------------------------
@@ -30,12 +30,13 @@ Auth::routes();
     Route::get('/productsdetail-{id}',[HomeController::class, 'productdetail'])->name('productdetail');
     Route::get('/aboutus',[HomeController::class, 'aboutus'])->name('aboutus');
     Route::get('/viewcart',[HomeController::class, 'viewcart'])->name('viewcart');
-    Route::get('/buynow',[HomeController::class, 'buynow'])->name('buynow');
+    // Route::get('/buynow',[HomeController::class, 'buynow'])->name('buynow');
     
 //
     
 //
-
+//buyProducts
+// Route:: 
 //Backend
 
 //Dashboard

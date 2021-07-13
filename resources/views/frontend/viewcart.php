@@ -19,7 +19,7 @@
       <span class="shopper"></span> Shopping Cart
     </h1>
 
-    <a href="{{ route('home') }}" class="visibility-cart transition is-open">X</a>    
+    <a href="home.php" class="visibility-cart transition is-open">X</a>    
   </div>
   
   <div class="cart transition is-open">
@@ -39,11 +39,11 @@
         
         <div class="col col-pro layout-inline">
           <img src="img/Products Categories/p1.JPG" alt="kitten" />
-          <p>lore</p>
+          <p>Cacti</p>
         </div>
         
         <div class="col col-price col-numeric align-center ">
-          <p>$5</p>
+          <p>$4</p>
         </div>
 
         <div class="col col-qty layout-inline">
@@ -53,7 +53,7 @@
         </div>
 
          <div class="col col-total col-numeric">  
-           <p>$10</p>
+           <p>$8</p>
          </div>         
       </div>
      
@@ -62,8 +62,8 @@
       <div class="layout-inline row">
         
         <div class="col col-pro layout-inline">
-          <img src="img/Products Categories/p1.JPG" alt="kitten" />
-          <p>lore</p>
+          <img src="img/Products Categories/p2.JPG" alt="kitten" />
+          <p>Climbers</p>
         </div>
         
         <div class="col col-price col-numeric align-center ">
@@ -85,8 +85,8 @@
        <div class="layout-inline row">
         
         <div class="col col-pro layout-inline">
-          <img src="img/Products Categories/p2.JPG" alt="kitten" />
-          <p>lore</p>
+          <img src="img/Products Categories/p3.JPG" alt="kitten" />
+          <p>Ferns</p>
         </div>
         
         <div class="col col-price col-numeric align-center ">
@@ -111,14 +111,14 @@
          <div class="row layout-inline">
            <div class="col">
              <p>Shipping: <span>3</span></p>
-             <p>Total: <span>31</span></p>
+             <p>Total: <span>29</span></p>
            </div>
 
          </div>
        </div>         
-  </div>
+              </div>
                 <li class="nav-item ">
-                            <a class="nav-link" href="{{ route('buynow') }}">Buy Now</a>
+                            <a class="btn btn-update" href="buynow.php">Buy Now</a>
                         </li>
 </div>
   
