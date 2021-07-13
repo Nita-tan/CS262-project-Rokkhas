@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
-    font-family: 'Battambang', cursive;
+    font-family: 'Poppins', cursive;
 }
 .body{
     padding-top: 50px;
-    font-family: 'Battambang', cursive;
+    font-family: 'Poppins', cursive;
 }
 .navbar-dark{
     background: transparent !important;

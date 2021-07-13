@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Battambang&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    font-family: "Battambang", cursive;
+    font-family: 'Poppins', cursive;
 }
 .background img {
     width: 100%;

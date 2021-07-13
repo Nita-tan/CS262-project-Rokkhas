@@ -24,8 +24,6 @@
             <th>Image</th>
             <th>Title</th>
             <th>Description</th>
-            <th>Region ID</th>
-            <th>Type ID</th>
             <th>Created at</th>
             <th>Action</th>
         </tr>
@@ -38,7 +36,6 @@
             <td>{{$products->name}}</td>
             {{-- <td>{{$products->description}}</td> --}}
             <td>{!!Str::limit($products->description, 300, ' (...)')!!}</td>
-            <td>{{$products->productsbyregion_id}}</td>
             <td>{{$products->productstype_id}}</td>
             <td width="100px">{{$products->created_at}}</td>
             <td width="250px">

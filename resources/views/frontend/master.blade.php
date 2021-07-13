@@ -40,11 +40,10 @@
                             <a class="nav-link" href="{{ route('productsrecommend') }}">Recommend</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="">Shopping Cart</a>
+                              <a class="nav-link" href="{{ route('viewcart') }}">Cart <span>0</span> </a>
                         </li>
-                        
-                        <li class="dropdown-menu">
-                            <a class="nav-link" href="{{ route('aboutus') }}">About us</a>
+                        <li class="nav-item ">
+                            <a class="nav-link"  href="{{ route('aboutus') }}">About us</a>
                         </li>
                     </ul>
                 </div>

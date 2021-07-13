@@ -38,7 +38,7 @@
                     <textarea id="my-editor" name="description" class="form-control" id="pdesc"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="region">Region</label>
+                    <label for="region">Products Recommend</label>
                     <select class="form-control selectpicker" data-live-search="true" id="productsrecommend_id" name="productsrecommend_id" multiple>
                         @foreach ($ProductsRecommend as $region)
                         <option value="{{$region->id}}">{{$region->name}}</option>

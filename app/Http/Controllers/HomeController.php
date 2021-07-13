@@ -62,4 +62,13 @@ class HomeController extends Controller
     {
         return view('frontend.aboutus');
     }
+
+    public function viewcart()
+    {
+        return view('frontend.viewcart');
+    }
+    public function buynow()
+    {
+        return view('frontend.buynow');
+    }
 }

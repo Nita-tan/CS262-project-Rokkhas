@@ -17,9 +17,11 @@
           <div class="col mb-4">
             <div class="card mx-auto">
               <img src="{{asset("images/".$products->img_url)}}" class="card-img-top" alt="...">
-              <div class="card-body">
+             
                 <h5 class="card-title"><a href="{{ route('productdetail',$products->id) }}">{{$products->name}}</a></h5>
-              </div>
+                <div class="product-desc">
+                <p>{!!$products->description!!}</p>
+            </div>
             </div>
           </div>
         </div>

@@ -29,6 +29,9 @@ Auth::routes();
     Route::get('/productsrecommend',[HomeController::class, 'productsrecommend'])->name('productsrecommend');
     Route::get('/productsdetail-{id}',[HomeController::class, 'productdetail'])->name('productdetail');
     Route::get('/aboutus',[HomeController::class, 'aboutus'])->name('aboutus');
+    Route::get('/viewcart',[HomeController::class, 'viewcart'])->name('viewcart');
+    Route::get('/buynow',[HomeController::class, 'buynow'])->name('buynow');
+    
 //
     
 //
@@ -73,10 +76,10 @@ Route::middleware('auth')->prefix('/productstype')->group(function(){
     Route::get('/delete/{id}',[ProductstypeContorller::class,'delete'])->name('productstype.delete');
 });
 
-//shopping cart
-Route::get ('/',function(){
-    return view('shop/index');
-});
+// //shopping cart
+// Route::get ('/',function(){
+//     return view('shop/index');
+// });
 
 //Laravel File Manager & CKEditor
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
